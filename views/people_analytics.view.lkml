@@ -35,6 +35,14 @@ view: people_analytics {
     sql: ${TABLE}.age ;;
   }
 
+  dimension: age_group {
+    type: tier
+    tiers: [18,25,35,45,55,65]
+    sql: ${age} ;;
+    style: integer
+
+  }
+
   dimension: department {
     type: string
     sql: ${TABLE}.department ;;
