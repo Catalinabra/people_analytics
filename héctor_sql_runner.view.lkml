@@ -5,6 +5,7 @@ view: héctor_sql_runner {
       group by age
       order by Edad
        ;;
+    persist_for: "8 hours"
   }
 
   measure: count {
