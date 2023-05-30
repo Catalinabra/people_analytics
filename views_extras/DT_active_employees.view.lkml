@@ -1,5 +1,6 @@
 view: DT_active_employees  {
     derived_table: {
+      datagroup_trigger: people_analytics_datagroup_2
       sql: SELECT job_level, gender, AVG(salary) as AVG_salary
               FROM people_analytics
               WHERE active_status = 1
@@ -32,4 +33,3 @@ view: DT_active_employees  {
       fields: [job_level, gender, avg_salary]
     }
   }
-

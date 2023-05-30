@@ -7,6 +7,9 @@ datagroup: people_analytics_datagroup {
   max_cache_age: "24 hours"
 }
 
-explore: people_analytics {
-  persist_with: people_analytics_datagroup
+datagroup: people_analytics_datagroup_2 {
+  sql_trigger: SELECT MAX(age) FROM people_analytics ;;
+  max_cache_age: "24 hours"
 }
+
+explore: people_analytics {}

@@ -1,6 +1,6 @@
 view: sql_runner_query {
   derived_table: {
-    datagroup_trigger: people_analytics_datagroup
+    datagroup_trigger: people_analytics_datagroup_2
     sql: select age, department
       from people_analytics
       where age between 20 and 30
