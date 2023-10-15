@@ -28,6 +28,7 @@ view: people_analytics {
     sql: ${age} ;;
     style: integer
 
+
   }
 
   dimension: department {
