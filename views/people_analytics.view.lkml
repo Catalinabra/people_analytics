@@ -170,4 +170,13 @@ view: people_analytics {
     type: count
     drill_fields: []
   }
+
+  dimension: gender_selector {
+    type: string
+    sql: ${TABLE}.gender ;;
+    link: {
+      label: "Femenino"
+      url: "https://nttdatacorporation.cloud.looker.com/dashboards/25?Gender={{_filters['people_analytics.gender']}}&Active+Status={{_filters['people_analytics.active_status']}}"
+    }
+  }
 }
